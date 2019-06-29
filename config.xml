@@ -2,9 +2,9 @@
 <widget id="com.mihneaandrei.stepped" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Stepped</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Stepped is a step counting app that tracks how many days in a row you’ve hit your target. You can set and adjust daily step goals.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
+    <author email="nate.north97@gmail.com" href="https://github.com/NateNorth">
         Apache Cordova Team
     </author>
     <content src="index.html" />
