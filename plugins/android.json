@@ -12,6 +12,9 @@
     },
     "cordova-plugin-secure-storage": {
       "PACKAGE_NAME": "com.mihneaandrei.stepped"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.mihneaandrei.stepped"
     }
   },
   "dependent_plugins": {}
