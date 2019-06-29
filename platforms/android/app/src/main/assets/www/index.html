@@ -1,56 +1,83 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <!-- Framework7 bundled style -->
-        <!-- <link rel="stylesheet" type="text/css" href="res/framework7/framework7.bundle.min.css"> -->
-        <!-- Custom style -->
-        <link rel="stylesheet" type="css" href="css/index.css">
-        <title>Stepped</title>
+            <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+            <!-- Required meta tags-->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-status-bar-style" content="black">
+            <meta name="format-detection" content="telephone=no">
+            <meta name="msapplication-tap-highlight" content="no">
+            <title>Stepped</title>
+            <!-- Framework7 styles -->
+            <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
+            <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+            <!-- Custom styles -->
+            <link rel="stylesheet" href="css/styles.css">
     </head>
+        
     <body>
-         <!-- App root element -->
-    <div id="app">
-            <!-- Statusbar overlay -->
-            <div class="statusbar"></div>
-      
+        <!-- Status bar overlay for full screen mode (PhoneGap) -->
+        <div class="statusbar-overlay"></div>
+    
+        <!-- Panels overlay-->
+        <div class="panel-overlay"></div>
+        <!-- Left panel with reveal effect-->
+        <div class="panel panel-left panel-reveal">
+            <div class="content-block">
+                <p>Left panel content goes here</p>
+            </div>
+        </div>
+    
+        <!-- Views -->
+        <div class="views">
             <!-- Your main view, should have "view-main" class -->
             <div class="view view-main">
-              <!-- Initial Page, "data-name" contains page name -->
-              <div data-name="home" class="page">
-      
-                <!-- Top Navbar -->
+                <!-- Top Navbar-->
                 <div class="navbar">
-                  <div class="navbar-inner">
-                    <div class="title">Awesome App</div>
-                  </div>
+                    <div class="navbar-inner">
+                        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                        <div class="center sliding">Awesome App</div>
+                        <div class="right">
+                            <!--
+                                Right link contains only icon - additional "icon-only" class
+                                Additional "open-panel" class tells app to open panel when we click on this link
+                            -->
+                            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                        </div>
+                    </div>
                 </div>
-      
-                <!-- Bottom Toolbar -->
-                <div class="toolbar toolbar-bottom">
-                  <div class="toolbar-inner">
-                    <!-- Toolbar links -->
-                    <a href="#" class="link">Link 1</a>
-                    <a href="#" class="link">Link 2</a>
-                  </div>
+                <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+                <div class="pages navbar-through toolbar-through">
+                    <!-- Page, "data-page" contains page name -->
+                    <div data-page="index" class="page">
+                        <!-- Scrollable page content -->
+                        <div class="page-content">
+                            <div class="content-block">
+                                <p>Page content goes here</p>
+                                <!-- Link to another page -->
+                                <a href="about.html">About app</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-      
-                <!-- Scrollable page content -->
-                <div class="page-content">
-                  <p>Page content goes here</p>
-                  <!-- Link to another page -->
-                  <a href="/about/">About app</a>
+                <!-- Bottom Toolbar-->
+                <div class="toolbar">
+                    <div class="toolbar-inner">
+                        <!-- Toolbar links -->
+                        <a href="#" class="link">Link 1</a>
+                        <a href="#" class="link">Link 2</a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        <!-- Framework 7 bundled script -->
-        <script type="text/javascript" src="res/framework7/framework7.min.js"></script>
-        <!-- Custom script -->
-        <script type="text/javascript" src="js/index.js"></script>
+        </div>
+
         <!-- Cordova script -->
         <script type="text/javascript" src="cordova.js"></script>
+        <!-- Framework7 script -->
+        <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+        <!-- Custom script -->
+        <script type="text/javascript" src="js/my-app.js"></script>
     </body>
 </html>
