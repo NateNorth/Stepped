@@ -16,6 +16,7 @@
     "cordova-android": "^8.0.0",
     "cordova-plugin-dialog": "0.0.1",
     "cordova-plugin-dialogs": "^2.0.1",
+    "cordova-plugin-pedometer": "^0.4.1",
     "cordova-plugin-secure-storage": "^3.0.2"
   },
   "devDependencies": {
@@ -24,7 +25,8 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-dialogs": {}
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-pedometer": {}
     },
     "platforms": [
       "android"
