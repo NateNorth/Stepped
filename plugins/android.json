@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.mihneaandrei.stepped"
+    },
+    "cordova-plugin-secure-storage": {
+      "PACKAGE_NAME": "com.mihneaandrei.stepped"
     }
   },
   "dependent_plugins": {}
