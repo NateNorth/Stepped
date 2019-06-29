@@ -1,0 +1,27 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.mihneaandrei.stepped"
+    },
+    "cordova-plugin-secure-storage": {
+      "PACKAGE_NAME": "com.mihneaandrei.stepped"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.mihneaandrei.stepped"
+    },
+    "cordova-plugin-pedometer": {
+      "PACKAGE_NAME": "com.mihneaandrei.stepped"
+    },
+    "cordova-plugin-feedreader": {
+      "PACKAGE_NAME": "com.mihneaandrei.stepped"
+    }
+  },
+  "dependent_plugins": {}
+}

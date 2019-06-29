@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-feedreader"
+    version="1.0.0">
+    <name>Cordova Plugin FeedReader</name>
+    <description>Cordova plugin to read rss feeds</description>
+    <license>MIT</license>
+    <keywords></keywords>
+    <repo>https://github.com/shuhailshuvo/cordova-plugin-feedreader.git</repo>
+
+    <!-- android -->
+    <platform name="android">
+      <js-module src="www/FeedReader.js" name="FeedReader">
+        <runs/>
+
+        <!-- This is the window variable name you want, like window.FeedReader -->
+        <clobbers target="FeedReader" />
+      </js-module>
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="FeedReader">
+          <param name="android-package" value="yapps.plugins.FeedReader" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+
+      <source-file src="src/android/yapps/plugins/FeedReader.java" target-dir="src/yapps/plugins/" />
+    </platform>
+</plugin>
