@@ -18,8 +18,7 @@
     "cordova-plugin-dialogs": "^2.0.1",
     "cordova-plugin-feedreader": "git+https://github.com/shuhailshuvo/cordova-plugin-feedreader.git",
     "cordova-plugin-pedometer": "^0.4.1",
-    "cordova-plugin-secure-storage": "^3.0.2",
-    "framework7": "^4.4.5"
+    "cordova-plugin-secure-storage": "^3.0.2"
   },
   "devDependencies": {
     "cordova-plugin-whitelist": "^1.3.3"

@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <!-- Framework7 bundled style -->
-        <link rel="stylesheet" type="text/css" href="../node_modules/framework7/css/framework7.bundle.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="res/framework7/framework7.bundle.min.css"> -->
         <!-- Custom style -->
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <!-- Framework 7 bundled script -->
-        <script type="text/javascript" src="../node_modules/framework7/js/framework7.bundle.min.js"></script>
-        <!-- Custom script -->
-        <script type="text/javascript" src="js/index.js"></script>
+        <link rel="stylesheet" type="css" href="css/index.css">
         <title>Stepped</title>
     </head>
     <body>
-        
-            <div id="app">
-                <!-- Statusbar overlay -->
-                <div class="statusbar"></div>
-            
-                <!-- Your main view, should have "view-main" class -->
-                <div class="view view-main">
-                    <!-- Initial Page, "data-name" contains page name -->
-                    <div data-name="home" class="page">
-            
-                    <!-- Top Navbar -->
-                    <div class="navbar">
-                        <div class="navbar-inner">
-                        <div class="title">Awesome App</div>
-                        </div>
-                    </div>
-            
-                    <!-- Bottom Toolbar -->
-                    <div class="toolbar toolbar-bottom">
-                        <div class="toolbar-inner">
-                        <!-- Toolbar links -->
-                        <a href="#" class="link">Link 1</a>
-                        <a href="#" class="link">Link 2</a>
-                        </div>
-                    </div>
-            
-                    <!-- Scrollable page content -->
-                    <div class="page-content">
-                        <p>Page content goes here</p>
-                        <!-- Link to another page -->
-                        <a href="/about/">About app</a>
-                    </div>
-                    </div>
+         <!-- App root element -->
+    <div id="app">
+            <!-- Statusbar overlay -->
+            <div class="statusbar"></div>
+      
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+              <!-- Initial Page, "data-name" contains page name -->
+              <div data-name="home" class="page">
+      
+                <!-- Top Navbar -->
+                <div class="navbar">
+                  <div class="navbar-inner">
+                    <div class="title">Awesome App</div>
+                  </div>
                 </div>
+      
+                <!-- Bottom Toolbar -->
+                <div class="toolbar toolbar-bottom">
+                  <div class="toolbar-inner">
+                    <!-- Toolbar links -->
+                    <a href="#" class="link">Link 1</a>
+                    <a href="#" class="link">Link 2</a>
+                  </div>
+                </div>
+      
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                  <p>Page content goes here</p>
+                  <!-- Link to another page -->
+                  <a href="/about/">About app</a>
+                </div>
+              </div>
             </div>
-        
+          </div>
+        <!-- Framework 7 bundled script -->
+        <script type="text/javascript" src="res/framework7/framework7.min.js"></script>
+        <!-- Custom script -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <!-- Cordova script -->
         <script type="text/javascript" src="cordova.js"></script>
     </body>
 </html>
