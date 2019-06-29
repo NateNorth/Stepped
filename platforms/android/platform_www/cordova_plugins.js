@@ -31,12 +31,22 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "pedometer"
       ]
+    },
+    {
+      "id": "cordova-plugin-feedreader.FeedReader",
+      "file": "plugins/cordova-plugin-feedreader/www/FeedReader.js",
+      "pluginId": "cordova-plugin-feedreader",
+      "clobbers": [
+        "FeedReader"
+      ],
+      "runs": true
     }
   ];
   module.exports.metadata = {
     "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-secure-storage": "3.0.2",
     "cordova-plugin-dialogs": "2.0.1",
-    "cordova-plugin-pedometer": "0.4.1"
+    "cordova-plugin-pedometer": "0.4.1",
+    "cordova-plugin-feedreader": "1.0.0"
   };
 });

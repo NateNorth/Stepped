@@ -30,4 +30,8 @@
     <feature name="Pedometer">
         <param name="android-package" value="org.apache.cordova.pedometer.PedoListener" />
     </feature>
+    <feature name="FeedReader">
+        <param name="android-package" value="yapps.plugins.FeedReader" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>

@@ -18,6 +18,9 @@
     },
     "cordova-plugin-pedometer": {
       "PACKAGE_NAME": "com.mihneaandrei.stepped"
+    },
+    "cordova-plugin-feedreader": {
+      "PACKAGE_NAME": "com.mihneaandrei.stepped"
     }
   },
   "dependent_plugins": {}

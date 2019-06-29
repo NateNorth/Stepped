@@ -30,5 +30,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-feedreader": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/shuhailshuvo/cordova-plugin-feedreader.git"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

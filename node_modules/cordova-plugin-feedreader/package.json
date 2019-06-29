@@ -1,0 +1,34 @@
+{
+  "_from": "git+https://github.com/shuhailshuvo/cordova-plugin-feedreader.git",
+  "_id": "cordova-plugin-feedreader@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-feedreader",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/shuhailshuvo/cordova-plugin-feedreader.git",
+    "rawSpec": "https://github.com/shuhailshuvo/cordova-plugin-feedreader.git",
+    "saveSpec": "git+https://github.com/shuhailshuvo/cordova-plugin-feedreader.git",
+    "fetchSpec": "https://github.com/shuhailshuvo/cordova-plugin-feedreader.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/shuhailshuvo/cordova-plugin-feedreader.git#5a29378bc59a6a1500578d47fce4dc528dbeb629",
+  "_spec": "https://github.com/shuhailshuvo/cordova-plugin-feedreader.git",
+  "_where": "D:\\projects\\github\\repos\\mihnea\\stepped",
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-feedreader",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova plugin to read RSS feed",
+  "name": "cordova-plugin-feedreader",
+  "version": "1.0.0"
+}
