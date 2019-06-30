@@ -1,17 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-
     <!-- Required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
@@ -22,10 +12,6 @@
 
     <!-- Your app title -->
     <title>Stepped</title>
-
-    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
-        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
-     -->
 
     <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
     <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
@@ -42,7 +28,56 @@
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
         <div class="content-block">
-            <p>Left panel content goes here</p>
+                <form id="DetailsForm">
+                        <ul>
+                          <li>
+                            <div class="item-content item-input">
+                              <div class="item-inner">
+                                <div class="item-title item-label">Name</div>
+                                <div class="item-input-wrap">
+                                  <input type="text" name="name" placeholder="Your name">
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                <div class="item-title item-label">Daily goal</div>
+                                <div class="item-input-wrap">
+                                    <input type="number" name="dailyGoal" placeholder="Daily steps goal">
+                                </div>
+                                </div>
+                            </div>
+                        </li>
+                          <li>
+                            <div class="item-content item-input">
+                              <div class="item-inner">
+                                <div class="item-title item-label">Age</div>
+                                <div class="item-input-wrap">
+                                  <input type="number" name="age" placeholder="Your age">
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="item-content item-input">
+                              <div class="item-inner">
+                                <div class="item-title item-label">Gender</div>
+                                <div class="item-input-wrap">
+                                  <select name="gender">
+                                    <option value="male" selected>Male</option>
+                                    <option value="female">Female</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </form>
+                      <div class="block block-strong row">
+                        <div class="col"><a id="DetailsSubmit" class="button fill-form-from-data" href="#">Apply</a></div>
+                      </div>    
         </div>
     </div>
 
@@ -64,6 +99,34 @@
                     </div>
                 </div>
             </div>
+            <!-- Spacer -->
+            <div class="card card-outline">
+                <div class="card-content card-content-padding"><br /><br /> </div>
+            </div>
+                  
+            <!-- Run-a-streak section card -->
+            <div class="card card-outline">
+                <div class="card-header">Run-a-streak: <span id="RunAStreak">15</span></div>
+                <div class="card-content card-content-padding"></div>
+            </div>
+
+            <!-- Step count section -->
+            <div class="card card-outline">
+                <div class="card-header">Steps today: <span id="StepCount">1568</span></div>
+                <div class="card-content card-content-padding"></div>
+            </div>
+
+            <!-- Daily goal section -->
+            <div class="card card-outline">
+                <div class="card-header">Daily goal: <span id="StepCount">3000</span></div>
+                <div class="card-content card-content-padding"><button id="TriggerStepCountPopup" class="button button-active">Edit</button></div>
+            </div>
+
+            <!-- Daily goal popup section -->
+            <div id="StepCountPopup" class="popup">
+                Any HTML content goes here
+            </div>
+
             <!-- Bottom Toolbar-->
             <div class="toolbar">
                 <div class="toolbar-inner">
